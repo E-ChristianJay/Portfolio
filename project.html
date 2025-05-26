@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1></h1>
+    <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="portfolio.png" alt="Portfolio Design">
+        <h3>Portfolio Design</h3>
+        <p>A personal UI-based project portfolio website made from wireframes and stylized. I also showcase a clean layout based on user experience and technology choices.</p>
+        <p class="tools">Tools used: HTML, CSS</p>
+      </div>
+
+      <div class="project-card">
+        <img src="wireframe.png" alt="Wireframing & Prototyping">
+        <h3>Wireframing & Prototyping</h3>
+        <p>I practiced UI design strategy and user-centered wireframes and prototypes that serve as a foundation in modern software development practices.</p>
+        <p class="tools">Tools used: Miro, Figma, and Mockup</p>
+      </div>
+
+      <div class="project-card">
+        <img src="unit-converter-android1.png" alt="Advanced Unit Converter">
+        <h3>Advanced Unit Converter</h3>
+        <p>A Java-based console application that converts multiple units and supports dynamic custom formula-based input using only Java code.</p>
+        <p class="tools">Tools used: Java OOP, File Handling</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Chan Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1></h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2 class="contact-title">GET IN TOUCH</h2>
+    <p class="subtitle">Let’s do amazing things together with HTML, CSS, JAVA and WIREFRAMING</p>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>   
+        <p><i class="fa-solid fa-envelope"></i> christian.ediong@jmc.edu.ph</p>
+        <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+        <p><i class="fa-solid fa-location-dot"></i> Dragon comp. Lower Cabantian Davao City</p>
+
+        <div class="socials">
+          <h4>Connect With Me</h4>
+          <a href="#"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+
+        <div class="resume-download">
+          <h4>Download Resume</h4>
+          <a href="resume.pdf" download><i class="fa-solid fa-download"></i> PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Chan Portfolio. All rights reserved.</p>
+  </footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navList = document.querySelector('nav ul');
+
+  toggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
